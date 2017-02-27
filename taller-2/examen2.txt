@@ -1,0 +1,88 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+float d1, d2, d3, d4, d5=0;
+float t1, t2, t3, t4, t5=0;
+
+cout<<"Ingrese las 5 distancias"<<endl;
+cin>>d1>>d1>>d3>>d4>>d5;
+cout<<"Ingrese los 5 tiempos"<<endl;
+cin>>t1>>t1>>t3>>t4>>t5;
+
+double v1=d1/t1;
+double v2=d2/t2;
+double v3=d3/t3;
+double v4=d4/t4;
+double v5=d5/t5;
+double prom_vel= (v1+v2+v3+v4+v5)/5;
+
+cout<<"promedio de distancia: "<<(d1+d2+d3+d4+d5)/5<<endl;
+cout<<"promedio de tiempo: "<<(t1+t2+t3+t4+t5)/5<<endl;
+cout<<"promedio de velocidades: "<<prom_vel<<endl;
+
+return 0;
+}
+-------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+double R=0;
+float pi= 3.141592;
+
+cout<<"Ingrese el radio R"<<endl;
+cin>>R;
+
+double l1=2*pi*R;
+double a1=pi*(R*R);
+
+cout<<"Circunferencia #1"<<endl;
+cout<<"area: "<<a1<<endl;
+cout<<"longitud: "<<l1<<endl;
+
+cout<<"Circunferencia #2"<<endl;
+cout<<"area: "<<a1*2<<endl;
+cout<<"longitud: "<<l1*2<<endl;
+
+cout<<"Circunferencia #3"<<endl;
+cout<<"area: "<<a1*3<<endl;
+cout<<"longitud: "<<l1*3<<endl;
+
+return 0;
+}
+-----------------------------------------------------------------------------
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+int num;
+cout<<"ingrese el numero de 4 cifras"<<endl;
+cin>>num;
+
+cout<<"el numero nvertido es igual a: "<<((num%10)*1000)+(((num/10)%10)*100)+(((num/100)%10)*10)+(num/1000)<<endl;
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
