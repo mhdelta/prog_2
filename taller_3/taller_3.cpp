@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -262,12 +263,14 @@ cout<<"El total ahorrado es de: $"<<(m_fruver*0.1+m_licor*0.08+m_ropa*0.1+m_aseo
 // ENTRADAS 
 // SALIDAS 
 // CONDICIONES
-int i, n = 20;
-for (i=0; i<n; i--)
-{
-cout << "x" << endl;
-}
+    cout<<"Ingrese cualquier numero: "<<endl;
+    int num; cin>>num;
 
- 
-return 0;
-}
+    if((num%5 == 0) && (num%11 == 0) )
+    {
+        cout<<"El numero es divisible por 5 y por 11"<<endl;
+    }
+    else
+    {
+        cout<<"El numero no es divisible por 5 ni por 11"<<endl;
+    }
