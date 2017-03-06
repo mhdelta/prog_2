@@ -12,6 +12,15 @@ int main()
 	cout<<"[4]Escribe s ó n"<<endl;
 	cout<<"[5]Meses"<<endl;
 	cout<<"[6]mayor a 100?"<<endl;
+	cout<<"[7]Numeros de menor a mayor"<<endl;
+	cout<<"[8]Numeros de mayor a menor"<<endl;
+	cout<<"[9]Negativo o positivo"<<endl;
+	cout<<"[10]Mayor a 100 "<<endl;
+	cout<<"[11]Vocales"<<endl;
+	cout<<"[12]Dos pares"<<endl;
+	cout<<"[13]Tercero igual a la suma de los os primeros?"<<endl;
+	cout<<"[14]Dos numeros primos"<<endl;
+	cout<<"[15]Super menu"<<endl;
 	cin>>sel;
 	switch(sel){
 		case 1:
@@ -177,7 +186,6 @@ int main()
 			 }
 		break;
 		case 8: 
-		int x,y,z,mayor,menor;
 			cout <<"Ingrese tres numeros"<<endl;
            	cout<<"N.1= ";cin>>x;
            	cout<<"N.2= ";cin>>y;   
@@ -243,19 +251,19 @@ int main()
           }
         break;
         case 11:
-        	char x;
+        	char x1;
 	          cout<<"Digite una letra para saber si es vocal o no"<<endl; 
-              cin>>x;
-          switch (x)
-             { case 'a': cout<<"Vocal A"<<endl;
+              cin>>x1;
+          switch (x1)
+             { case 'a': cout<<"Vocal a"<<endl;
                          break;
-                 case 'e': cout<<"AVocal E "<<endl;
+                 case 'e': cout<<"Vocal e "<<endl;
                             break;
-                    case 'i': cout<<"Vocal I"<<endl;
+                    case 'i': cout<<"Vocal i"<<endl;
                                break;
-                       case 'o': cout<<"AVocal O "<<endl;
+                       case 'o': cout<<"AVocal o "<<endl;
                                   break;
-					      case 'u': cout<<"Vocal U"<<endl;
+					      case 'u': cout<<"Vocal u"<<endl;
                                     break;
                  
                          default: cout<<"NO es una vocal"<<endl;
@@ -280,7 +288,7 @@ int main()
 					   }
         break;
         case 13:
-        	cout<<"Digite tres números este indica si el tercero es igual a la suma del primero y el segundo"<<endl;
+        	cout<<"El tercero es igual a la suma del primero y el segundo??????????"<<endl;
                cout<<""<<endl;
                cout<<"Digite el primer numero:"<<endl;
                cin>>x;
@@ -292,9 +300,9 @@ int main()
              switch (z==(x+y))
              
               {
-			  case 1: cout<<"Efectivamente, el tercer numero es igual a la suma de los dos primeros..."<<endl;
+			  case 1: cout<<"Eureka, tercero igual a la suma de los dos primeros..."<<endl;
                       break;
-                case 0: cout<<"El ultimo digito no es igual a la suma de los dos primeros ..."<<endl;
+                case 0: cout<<"No es igual a la suma de los primeros dos ..."<<endl;
                         break;
            }
             
@@ -302,9 +310,9 @@ int main()
         case 14:
         	cout<<"Digite 2 numeros del 1-5 :"<<endl;
               cout<<""<<endl;
-               cout<<"Digite el primer numero:"<<endl;
+               cout<<"Primer numero:"<<endl;
                cin>>x;
-              cout<<"Digite el segundo numero:"<<endl;
+              cout<<"Segundo numero:"<<endl;
               cin>>y;
               
 			   
@@ -317,11 +325,11 @@ int main()
 			         }
 		break;
 		case 15:
-			case 15: cout<<"    MENU     "<<endl;
+					cout<<"    MENU     "<<endl;
                     cout<<"1.Archivo"<<endl;
                     cout<<"2.Buscar"<<endl;
                     cout<<"3.Salir"<<endl;
-                    cout<<"Escoja la opcion deseada"<<endl;
+                    cout<<"Escoja una opcion"<<endl;
                     cin>>num;
                     
                     switch (num)
@@ -339,6 +347,18 @@ int main()
 
 
 
+	}
+	
+	cout<<"Ejecutar de nuevo (s/n)?"<<endl;
+	char selec;
+	cin>>selec;
+	if(selec=='s'){
+		main();
+	}else if(selec=='n'){
+		cout<<"Hasta luego :)"<<endl;
+		return 1;
+	}else{
+		return 0;
 	}	
 	return 0;
 }
