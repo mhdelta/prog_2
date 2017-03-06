@@ -257,13 +257,13 @@ int main()
           switch (x1)
              { case 'a': cout<<"Vocal a"<<endl;
                          break;
-                 case 'e': cout<<"Vocal e "<<endl;
+                case 'e': cout<<"Vocal e "<<endl;
                             break;
-                    case 'i': cout<<"Vocal i"<<endl;
+                case 'i': cout<<"Vocal i"<<endl;
                                break;
-                       case 'o': cout<<"AVocal o "<<endl;
+                case 'o': cout<<"AVocal o "<<endl;
                                   break;
-					      case 'u': cout<<"Vocal u"<<endl;
+				case 'u': cout<<"Vocal u"<<endl;
                                     break;
                  
                          default: cout<<"NO es una vocal"<<endl;
