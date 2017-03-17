@@ -24,7 +24,7 @@ int primo(int x){
 	}
 
 	if (cont>2){
-		return 1;
+		return 0;
 	}
 	else if(x=1){
 		return 0;

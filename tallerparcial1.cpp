@@ -114,6 +114,8 @@ int main(){
 		i++;
 	}
 */
+
+/*
 // Programa 5
 
 	cout<<"Ingrese numeros enteros"<<endl;
@@ -130,6 +132,7 @@ int main(){
 			}
 		}
 	}
+*/
 //Programa 6
 /*
 	int lim0=0;
@@ -154,6 +157,8 @@ int main(){
 		}
 		lim0++;
 		}*/
+
+/*
 //problema 7
 	int lim0=0;
 	int lim1=1;
@@ -180,13 +185,14 @@ int main(){
 		lim0++;
 		}
 		cout<<"suma: "<<suma<<endl;
-
+*/
 
 //Problema 8
 //los números Primos de la serie de Fibonacci de m términos:
+	int lim1;
 	cout<<"Cuantos numeros de fibbonacci? "<<endl;
 	cin>>lim1;
-	i=0;
+	int i=0;
 	int ant=0, antant=1;
 	int fib=0;
 	while(i<lim1){
@@ -217,13 +223,67 @@ int main(){
 			k++;
 		}
 		if(cont<=2&&fib!=1){
-			cout<<fib<<".";
+			cout<<fib<<"..";
 		}		
 	}
 
 
+//Extra # 1, triagulo con fib
+/*
+	int f=0, c=0;
+	int contpar=2;
+	int i=0;
+	int ant=0, antant=1;
+	int fib=0;
+	int k=0;
+	cout<<"Numero de columnas"<<endl;
+	cin>>c;
 
+	while(i<=c){
+		f=c+i;	
+		while(f>=c){
+			fib=ant+antant;
+			antant=ant;
+			ant=fib;
+			cout<<fib<<".";		
+			f--;
+			}
+		cout<<endl;
+		i++;
+	}
+*/
+//	Extra #2 Triangulo con primos
+/*
 
+	int i=0, k=1, f=0, c=0, cont=1, div=0;
+
+	cout<<"Numero de columnas"<<endl;
+	cin>>c;
+
+	while(i<c){
+		f=i;
+		while(f<=c){
+			k=1;
+			div=0;
+			while(k<cont){
+				if(cont%k==0){
+					div+=1;
+				}
+				k++;
+			}
+			if(div<=2){
+				cout<<cont<<".";
+			}
+			else{
+				cout<<"**";
+			}
+			cont++;
+			f++;
+		}
+		cout<<endl;
+		i++;
+	}
+*/
 
 
 	return 0; 
