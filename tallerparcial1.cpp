@@ -38,7 +38,7 @@ int main(){
 		if ((edades!=1&&edades!=-1)&&edades<menor)
 		{
 			menor=edades;
-		}
+	}	
 		if (edades>60)
 		{
 			jub+=1;
