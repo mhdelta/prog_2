@@ -54,7 +54,7 @@ i=0, x=0;
 int tab=0;
 	for(i=0; i<10;i++){
 		for(x=1; x<=n; x++){
-			cout<<x<<" x "<<i<<" = "<<(i*x)<<"\t\t";
+			cout<<x<<" x "<<i<<" = "<<(i*x)<<"\t";
 		}
 		cout<<endl;
 	}
